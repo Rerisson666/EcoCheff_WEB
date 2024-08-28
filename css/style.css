@@ -32,8 +32,21 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
+.intro {
+    /* Degradê gradiente de verde para azul */
+    background: linear-gradient(to bottom, #4CAF50, #81C784);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-text {
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 footer {
@@ -46,8 +59,29 @@ footer {
     bottom: 0;
 }
 
-.intro, .recipes, .profile, .preferences {
-    margin-bottom: 20px;
+.recipes {
+    padding: 20px;
+}
+
+.recipe-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.recipe-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.recipe-item h3 {
+    margin-top: 0;
 }
 
 form {
@@ -77,15 +111,4 @@ button {
 
 button:hover {
     background-color: #45a049;
-}
-
-.recipe-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 10px;
-}
-
-.recipe-item h3 {
-    margin-top: 0;
 }
