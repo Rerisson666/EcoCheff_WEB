@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoChef - Home</title>
+    <title>EcoChef - Perfil</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,14 +20,24 @@
     </header>
 
     <main>
-        <section class="intro">
-            <h2>Bem-vindo ao EcoChef</h2>
-            <p>Descubra receitas sustentáveis e cuide do meio ambiente com escolhas alimentares responsáveis.</p>
+        <section class="profile">
+            <h2>Meu Perfil</h2>
+            <form id="profile-form">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" value="Usuário Exemplo">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="usuario@exemplo.com">
+
+                <button type="submit">Salvar</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 EcoChef. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/profile.js"></script>
 </body>
 </html>
