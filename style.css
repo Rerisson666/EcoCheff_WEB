@@ -1,25 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
+    padding: 15px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -27,12 +32,19 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
+.intro {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-section {
-    margin-bottom: 20px;
+.intro-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 footer {
@@ -40,9 +52,33 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.recipes {
+    padding: 20px;
+}
+
+.recipe-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.recipe-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.recipe-item h3 {
+    margin-top: 0;
 }
 
 form {
@@ -54,8 +90,11 @@ form label {
     margin-bottom: 5px;
 }
 
-form select {
-    padding: 5px;
+form input, form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 
 button {
@@ -64,14 +103,9 @@ button {
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: #45a049;
-}
-
-#recipe-list, #impact-report {
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
 }
