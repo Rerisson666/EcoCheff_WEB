@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChef</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EcoChef</h1>
+        <nav>
+            <ul>
+                <li><a href="#recipes">Receitas</a></li>
+                <li><a href="#preferences">Preferências</a></li>
+                <li><a href="#impact">Impacto Ambiental</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recipes">
+            <h2>Receitas Sustentáveis</h2>
+            <div id="recipe-list"></div>
+        </section>
+
+        <section id="preferences">
+            <h2>Definir Preferências Alimentares</h2>
+            <form id="preferences-form">
+                <label for="preference">Escolha sua preferência:</label>
+                <select id="preference" name="preference">
+                    <option value="vegetarian">Vegetariano</option>
+                    <option value="vegan">Vegano</option>
+                    <option value="gluten-free">Sem Glúten</option>
+                </select>
+                <button type="submit">Salvar Preferência</button>
+            </form>
+        </section>
+
+        <section id="impact">
+            <h2>Impacto Ambiental</h2>
+            <div id="impact-report"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EcoChef. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
